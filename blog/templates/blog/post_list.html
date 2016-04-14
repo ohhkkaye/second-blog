@@ -6,7 +6,7 @@
 
 	<center>
 	<h1>Kaye</h1>
-	<h2>Randomness begins here...</h2>
+	<h2>Randomness begins here..</h2>
 	</center>
 
 	<body>
@@ -14,14 +14,51 @@
 		<p>Hi there!</p>
 		<p>It's working! Woohoo!</p>
 
+
 		<div>
 			<h3><a href="">First blog</a></h3>
 			<p>BLAH BLAH stuff stuff stuff</p>
 		</div>
+			{% for post in posts %}
+			<div>
+				<p>published: {{ post.published_date }}</p>
+				<h1><a href="">{{ post.title }}</a></h1>
+				<p>{{ post.text|linebreaks }}</p>
+			</div>
+
+			{% endfor %}
+
 
 		<div>
-			<h4><a href="">First blog</a></h4>
+			<h4><a href="">hello operator</a></h4>
 			<p>BLAH BLAH stuff stuff stuff</p>
+		</div>
+
+			{% for post in posts %}
+			<div>
+				<p>published: {{ post.published_date }}</p>
+				<h1><a href="">{{ post.title }}</a></h1>
+				<p>{{ post.text|linebreaks }}</p>
+			</div>
+
+			
+		<div>
+
+			{{ posts }}
+
+		</div>
+
+		<div>
+			<h5><b>What up!</b></h5>
+				<p>Hello!</p>
+				<p>published: {{ post.published_date }}</p>
+				<p>{{ post.text|linebreaks }}</p>
+		</div>
+
+			{% endfor %}
+
+
+
 		</div>
 
 	</body>

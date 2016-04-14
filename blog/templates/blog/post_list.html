@@ -25,21 +25,7 @@
 				<h1><a href="">{{ post.title }}</a></h1>
 				<p>{{ post.text|linebreaks }}</p>
 			</div>
-
 			{% endfor %}
-
-
-		<div>
-			<h4><a href="">hello operator</a></h4>
-			<p>BLAH BLAH stuff stuff stuff</p>
-		</div>
-
-			{% for post in posts %}
-			<div>
-				<p>published: {{ post.published_date }}</p>
-				<h1><a href="">{{ post.title }}</a></h1>
-				<p>{{ post.text|linebreaks }}</p>
-			</div>
 
 			
 		<div>
@@ -49,13 +35,13 @@
 		</div>
 
 		<div>
-			<h5><b>What up!</b></h5>
+			<h2><b>What up!</b></h2>
 				<p>Hello!</p>
 				<p>published: {{ post.published_date }}</p>
 				<p>{{ post.text|linebreaks }}</p>
 		</div>
 
-			{% endfor %}
+			
 
 
 

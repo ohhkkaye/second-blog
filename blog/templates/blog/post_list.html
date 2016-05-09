@@ -1,15 +1,4 @@
 {% extends 'blog/base.html' %}
-{% load staticfiles %}
-
-<html>
-
-	<center>
-		<div class="page-header">
-			<h1><a href="/">Magical Mystery Tour</a></h1>
-			<h2>Randomness begins here..</h2>
-		</div>
-	</center>
-	<body>
 
 		{% block content %}
             {% for post in posts %}
@@ -17,19 +6,9 @@
                     <div class="date">
                         {{ post.published_date }}
                     </div>
-                    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaks }}</p>
                 </div>
             {% endfor %}
         {% endblock %}
 
-		<div>
-			<h3><b>What up!</b></h3>
-				<p>Hello!</p>
-				<p>published: {{ post.published_date }}</p>
-				<p>{{ post.text|linebreaks }}</p>
-		</div>
-
-	</body>
-
-</html>

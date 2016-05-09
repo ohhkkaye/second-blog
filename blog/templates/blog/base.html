@@ -1,24 +1,115 @@
 {% load staticfiles %}
+
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <title>Kaye's Blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> - 
+        <!-- <link rel="stylesheet" href="//Users/Ohhkkaye/Documents/Bootstrap/css/bootstrap-theme.css"> -->
+        <link href='https://fonts.googleapis.com/css?family=Pacifico|Cookie|Delius+Unicase|Glegoo:400,700|Crimson+Text|Lobster' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lobster+Two|Satisfy|Cookie|Indie+Flower|Dosis|Anton|Dancing+Script|Rokkitt|Cinzel|Comfortaa|Philosopher|Shadows+Into+Light+Two|Vidaloka|Handlee|Didact+Gothic|Pinyon+Script' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+
+    <body>
+
+        <div class="page-header">
+            <h1><a href="/"><center>Kaye's Blog</center></a></h1>
+            <h2> Art. Music. Fitness. Food.<h2>
+           <!--  <img class="banner" src="https://microsoftstudios.com/hololens/wp-content/uploads/sites/4/2016/01/piano-03.jpg"/> -->
+
+        </div>
+                
+        <div class="top">
+            <ul>
+                <li><a href="blog.asp">Blog</a></li>
+                <li><a href="about.asp">About Me</a></li>
+                <li><a href="schedule.asp">Other</a></li>
+            </ul>
+         </div>
+
+        <div class="side-bar">
+            <h2>About Me</h2>
+           
+                <img src="http://flagstaffsymphony.org/news/wp-content/uploads/2015/09/Violin-RBP-website.jpg" alt="violin" height="100" width="170"> 
+            <br>
+            <br>
+            <p>Short description here blah blah blah</p>
+            <p>Blah blah blah</p>
+            <p> blah blah blah</p>
+           
+            <br>
+            <div class="menu">
+                <ul>
+                    <h3> <b>Contact Me</b> <h3>
+                    <br><li><a href="blog.asp">Twitter</a></li>
+                    <br><li><a href="about.asp">Facebook</a></li>
+                    <br><li><a href="schedule.asp">IG</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="content-container">
+            <div class="row">
+                <div class="col-md-8">
+                <h12></h2>
+                {% block content %}
+                {% endblock %}
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
+
+
+</html>
+
+
+
+<!-- {% load staticfiles %}
 <html>
     <head>
         <title>Kaye's Blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Pacifico|Cookie|Delius+Unicase|Glegoo:400,700|Crimson+Text|Lobster' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
-<body>
-    <div class="page-header">
-        <h1><a href="/">Kaye's Blog</a></h1>
-    </div>
-    <div class="content container">
-        <div class="row">
-            <div class="col-md-8">
-            {% block content %}
-            {% endblock %}
+        <div class="page-header">
+            <h1><a href="/">Love, Kaye</a></h1>
+        </div>
+        <div class="top">
+            <ul> 
+                <li><a href="default.asp">Home</a></li>
+                <li><a href="blog.asp">Blog Posts</a></li>
+                <li><a href="contact.asp">Contact Me</a></li>
+                <li><a href="about.html" target="_self">About Me</a></li>
+            </ul>
+        </div>
+
+        <div class="cssmenu">
+
+            <ul>
+                <li><a href"x">Twitter</li>
+                <li><a href"x">Facebook</li>
+            </ul>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+'
+'
+                </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+</html> -->
